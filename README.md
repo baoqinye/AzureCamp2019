@@ -24,8 +24,9 @@ We are designing the system to run atop of a series of containers hosted in Kube
 
 Most of the tools we're using can be installed quickly on the day of the camp but it never hurts to be prepared. These are some of the things you can install ahead of time. 
 
-1. The Azure CLI ([Any platform](https://docs.microsoft.com/en-us/cli/azure/install-azure-cli?view=azure-cli-latest))
-2. Docker ([Windows](https://runnable.com/docker/install-docker-on-windows-10) | [OSX](https://runnable.com/docker/install-docker-on-macos) | [Linux](https://runnable.com/docker/install-docker-on-linux))
+1. The Azure CLI ([Any platform](https://docs.microsoft.com/en-us/cli/azure/install-azure-cli?view=azure-cli-latest)) - for accessing azure
+2. Docker ([Windows](https://runnable.com/docker/install-docker-on-windows-10) | [OSX](https://runnable.com/docker/install-docker-on-macos) | [Linux](https://runnable.com/docker/install-docker-on-linux)) - for running containers locally
+3. Kubectrl ([Any platform](https://kubernetes.io/docs/tasks/tools/install-kubectl/#install-kubectl)) - for interacting with kubernetes
 
 ## Why containers?
 
@@ -39,10 +40,14 @@ Bit of a nightmare really. Doubly so when you consider shipping you application 
 
 Containers introduce a layer of isolation which is greater than that of a simple process. This might sound a lot like a virtual machine but containers actually sit in a sweet spot where they can be way more efficient than a full VM and way more isolated than a process. They give you the confidence that you application will perform the same way in production as it does in test and even on your local machine. 
 
-Let's start
+Let's start with building an application. Then we'll containerize it for deployment. 
+
+## Building the Application
 
 
-##Original plan
+
+
+## Original plan
 1. Create an app which listens to an Azure storage queue
 2. Add docker support and run on your local machine
 3. Check it into GitHub

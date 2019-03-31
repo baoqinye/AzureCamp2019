@@ -1,4 +1,4 @@
-#Azure Camp 2019
+# Azure Camp 2019
 
 This is the code for azure camp 2019 in Calgary, Alberta. The theme of this camp is around containers and Kubernetes. For good measure we're adding a little bit of AI into the mix because that's cool these days. 
 
@@ -6,7 +6,7 @@ Our application is an application form for a job posting site. We're going to al
 
 If you're actually considering building a system on microservices it is best to do a bunch of research up front and have a clear understanding of what the advantages and disadvantages of microservices are. https://dwmkerr.com/the-death-of-microservice-madness-in-2018/ is a pretty good article to get you started. 
 
-##Services
+## Services
 
 1. Salary prediction service - this AI based service will rate your offered salary against the industry average for your province. 
 
